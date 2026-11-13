@@ -9,7 +9,7 @@ The window and input go through SDL2, so it runs on Windows and Linux.
 SoftEngine.Core/    engine only: OBJ loader, Frame (unit vectors), FrameBuffer, WireframeRenderer
 SoftEngine.App/     SDL2 host: window, streaming texture, keyboard + gamepad
 SoftEngine.Tests/   xUnit tests for the projection, near clipping, orthonormality and OBJ loading
-models/             ship01.obj, ship04.obj
+models/             ship1.obj, ship2.obj, ship3.obj, ship4.obj
 ```
 
 ## Setup
@@ -29,7 +29,7 @@ Put `SDL2.dll` in `SoftEngine.App/` and the build copies it to the output folder
 
 ```
 dotnet run --project SoftEngine.App -- models
-dotnet run --project SoftEngine.App -- models/ship01.obj path/to/other.obj
+dotnet run --project SoftEngine.App -- models/ship1.obj path/to/other.obj
 dotnet test SoftEngine.Tests
 ```
 
